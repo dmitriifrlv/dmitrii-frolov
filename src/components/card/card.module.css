@@ -1,0 +1,88 @@
+.card {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: .25rem;
+    background: linear-gradient(-45deg, rgba(34,32,28,1) 45%, rgba(65,77,83,1) 75%);
+    width: 50vw;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 3px white;
+}
+    
+.title{
+    flex-direction: row;
+    
+    font-size: 1.25rem;
+    margin-top: .35rem;
+    
+    /* border:1px solid pink; */
+}
+
+.pic {
+    flex-direction: row;
+    justify-content: center;
+    border-radius: .75rem;
+    width: 40%;
+    min-width: 13rem;
+    max-width: 15rem;
+    margin: .5rem auto;
+    /* border:1px solid pink; */
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid yellow; */
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.too {
+    display: flex;
+    border: 3px solid pink;
+    /* width: 80%; */
+}
+
+.description {
+    flex-direction: row;
+    text-align: justify;
+    font-size: 1rem;
+    display: flex;
+    margin: 0 1rem;
+    /* border:1px solid pink; */
+}
+
+.btnBlock {
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: .35rem;
+    /* border:1px solid pink; */
+}
+
+  
+
+.btn {
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+@media (max-width: 440px) {
+    .card{
+        width: 80vw;
+    }
+  }

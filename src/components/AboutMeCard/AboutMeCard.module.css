@@ -1,0 +1,107 @@
+.AboutMeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: .25rem;
+  background: linear-gradient(-45deg, rgba(34,32,28,1) 45%, rgba(65,77,83,1) 75%);
+  width: 60%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 3px white;
+  font-size: 1rem;
+  /* border: 1px solid red; */
+}
+
+.title{
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: .35rem; 
+  padding-bottom: .75rem;
+  /* border: 1px solid red; */
+}
+
+.story{
+  text-align: justify;
+  margin: 0rem 1rem;
+  line-height: 1.35;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding-bottom: .5rem;
+  /* border: 1px solid red; */
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  width: 100%;
+  /* border: 5px solid yellow; */
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border: 2px solid white; */
+  flex-wrap: wrap;
+  margin: 0rem 1rem;
+  font-size: .7rem;
+}
+
+.btnBlock{
+  display: flex;
+  font-size: 1rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: .35rem;
+  /* border: 3px solid white; */
+}
+
+.btnBlock button{
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  background-color: inherit;
+  border: 1px solid white;
+  border-radius: 1rem;
+  border: 1px solid white;
+  padding: 3px;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: .75rem;
+  font-size: 100%;
+  font-family: inherit;
+  line-height: 1.15;
+  text-align: center;
+  overflow: visible;
+  text-transform: none;
+  transition: 220ms all ease-in-out;
+}
+
+.btnBlock button:hover{
+  color: black;
+  background-color: white;
+}
+
+.btnBlock button:focus{
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px scale-color(inherit, $lightness: -40%);
+}
+
+button {
+  -webkit-appearance: button;
+}
+
+@media (max-width: 440px) {
+  .AboutMeCard {
+    width: 80%;
+  }
+}
