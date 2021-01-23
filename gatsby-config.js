@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Dmitrii Frolov",
   },
+  pathPrefix: "/dmitrii-frolov",
   plugins: [
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
