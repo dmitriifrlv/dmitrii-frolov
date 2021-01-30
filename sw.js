@@ -27,26 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-335f6f5be2486b3f6063.js"
+    "url": "webpack-runtime-ce1cdabc16d8e9696ae6.js"
   },
   {
-    "url": "styles.9118d537d5ff70400db7.css"
+    "url": "styles.479c59456644b3a9e536.css"
   },
   {
     "url": "styles-407fe62976dc5310c43e.js"
   },
   {
-    "url": "framework-6c3ead24af170cdcb87c.js"
+    "url": "framework-305b3707783ccc9d7ca6.js"
   },
   {
-    "url": "app-6d4b6ef898c0e5b60b21.js"
+    "url": "app-c7a381958b37f315dae9.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "30e7f4ffb43cb3c766e9572aec6eb3d2"
+    "revision": "ccbfdbc14693fbe48aa1c87f23df4e9c"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-fd4fb51a6fac1c18bdde.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -54,33 +54,40 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "5f0a0b55adc4fbb12b9906ef0363fbe4"
+    "revision": "5a9bcb8ff4eceea1c3f6d2c4d96eee6f"
   },
   {
-    "url": "polyfill-c4336065681b4417609f.js"
+    "url": "polyfill-31bd25ec256a9117a66a.js"
   },
   {
     "url": "a9a7754c-9853ecc6232410f8def6.js"
   },
   {
-    "url": "cb1608f2-2c8b41a7867ea183c9d6.js"
+    "url": "cb1608f2-9e8ef9f692b1456390c2.js"
   },
   {
-    "url": "dc88408d3ff7eca40f92b7844b0df82fe276bd8a-f5bc2e2531bded1be706.js"
+    "url": "dc88408d3ff7eca40f92b7844b0df82fe276bd8a-2eec4025a7afe1923eb1.js"
   },
   {
-    "url": "component---src-pages-projects-js-10d2f411082606429a2f.js"
+    "url": "component---src-pages-projects-js-229e0731498180d99a08.js"
   },
   {
     "url": "page-data/projects/page-data.json",
     "revision": "c228d7518ad2050a4a0eb63d8373e1d8"
   },
   {
-    "url": "component---src-pages-about-js-fe0464297e5b36dd749f.js"
+    "url": "d4ad233efeb1d959420253442063e6db7488fdeb-3049c2d319875b7c114d.js"
+  },
+  {
+    "url": "component---src-pages-about-js-e23d840729dc5619aa69.js"
   },
   {
     "url": "page-data/about/page-data.json",
-    "revision": "b728ab94bb01f7c8ae2aaba75fbff281"
+    "revision": "a764e0ae5a673ff973ee61ccb2a1b7d6"
+  },
+  {
+    "url": "page-data/sq/d/1502441455.json",
+    "revision": "11b1485172968e869d73b11ea4b5fae1"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -172,7 +179,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/dmitrii-frolov/app-6d4b6ef898c0e5b60b21.js`))) {
+  if (!resources || !(await caches.match(`/dmitrii-frolov/app-c7a381958b37f315dae9.js`))) {
     return await fetch(event.request)
   }
 
