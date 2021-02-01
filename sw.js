@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-443d41324cb1db657cbe.js"
+    "url": "webpack-runtime-0955d514bd8ff63daeac.js"
   },
   {
     "url": "styles.f7f2c8e768b06f0b118c.css"
@@ -36,17 +36,17 @@ self.__precacheManifest = [
     "url": "styles-407fe62976dc5310c43e.js"
   },
   {
-    "url": "framework-305b3707783ccc9d7ca6.js"
+    "url": "framework-6c3ead24af170cdcb87c.js"
   },
   {
-    "url": "app-5f99bb8ccf0d881dd436.js"
+    "url": "app-0f3a7fce009d3ba259fe.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f20ce187a6f0aabab87b470e36969e9f"
+    "revision": "310f44c03b86b51cae8518d3d972ee5d"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-fd4fb51a6fac1c18bdde.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -54,36 +54,37 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "5ab4d486cbf9620f283174c1d6a9bae0"
+    "revision": "27557464661d5bb7ec2daa5a62654b76"
   },
   {
-    "url": "polyfill-31bd25ec256a9117a66a.js"
+    "url": "polyfill-c4336065681b4417609f.js"
   },
   {
     "url": "a9a7754c-9853ecc6232410f8def6.js"
   },
   {
-    "url": "cb1608f2-9e8ef9f692b1456390c2.js"
+    "url": "cb1608f2-2c8b41a7867ea183c9d6.js"
   },
   {
     "url": "dc88408d3ff7eca40f92b7844b0df82fe276bd8a-2eec4025a7afe1923eb1.js"
   },
   {
-    "url": "component---src-pages-projects-js-229e0731498180d99a08.js"
+    "url": "component---src-pages-projects-js-54550e1a32618af7d0b7.js"
   },
   {
     "url": "page-data/projects/page-data.json",
     "revision": "c228d7518ad2050a4a0eb63d8373e1d8"
   },
   {
-    "url": "d4ad233efeb1d959420253442063e6db7488fdeb-3049c2d319875b7c114d.js"
-  },
-  {
-    "url": "component---src-pages-about-js-19320a4fb2db79d1d0c4.js"
+    "url": "component---src-pages-about-js-8aa00296c4d21ded8806.js"
   },
   {
     "url": "page-data/about/page-data.json",
-    "revision": "0a22fba44c4379239b6f6c926311a3ad"
+    "revision": "bef728428f82b80e85748d9f244a2a67"
+  },
+  {
+    "url": "page-data/sq/d/2358470587.json",
+    "revision": "e69975467133bc225d36b5462ef6e21d"
   },
   {
     "url": "page-data/sq/d/2651274713.json",
@@ -179,7 +180,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/dmitrii-frolov/app-5f99bb8ccf0d881dd436.js`))) {
+  if (!resources || !(await caches.match(`/dmitrii-frolov/app-0f3a7fce009d3ba259fe.js`))) {
     return await fetch(event.request)
   }
 
