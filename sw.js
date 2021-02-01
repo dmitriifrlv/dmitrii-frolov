@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-8483c3a9e63fb799a15c.js"
+    "url": "webpack-runtime-0c2a53d3ee71a63f99ff.js"
   },
   {
-    "url": "styles.fa8d7f10a271054b1550.css"
+    "url": "styles.50ae57efda41d402b323.css"
   },
   {
     "url": "styles-407fe62976dc5310c43e.js"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-6c3ead24af170cdcb87c.js"
   },
   {
-    "url": "app-a9fd4d33ee3c696b0ba0.js"
+    "url": "app-f6a67fa40a49c7764194.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f1fd0c4477faa561a77c477df3a87af8"
+    "revision": "842dd481b47e6b9be6d051651d2b442c"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
@@ -54,7 +54,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "5786278d29e94500be4dea5cdc81dcb9"
+    "revision": "6fc70cf48a2433d30f5a1740fa397f4e"
   },
   {
     "url": "polyfill-c4336065681b4417609f.js"
@@ -84,11 +84,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/sq/d/1772527931.json",
-    "revision": "63896ff94d3f4602c8954bf961326137"
+    "revision": "d7f4aa66a2c2cdee11f6ab9ab7ed516f"
   },
   {
     "url": "page-data/sq/d/978222640.json",
-    "revision": "31dddebe13c3f812d560a4a00999099a"
+    "revision": "704e4b2df460c34b97fc8c25250689fb"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -180,7 +180,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/dmitrii-frolov/app-a9fd4d33ee3c696b0ba0.js`))) {
+  if (!resources || !(await caches.match(`/dmitrii-frolov/app-f6a67fa40a49c7764194.js`))) {
     return await fetch(event.request)
   }
 
