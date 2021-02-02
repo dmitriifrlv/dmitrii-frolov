@@ -1,0 +1,61 @@
+.btn{
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.02857em;
+  text-decoration: none;
+  color: #f1f0ea;
+  background-color: inherit;
+  border-radius: 1rem;
+  border: 1px solid #f1f0ea;
+  /* padding: 0.25em 0.5em; */
+  padding: 5px 10px;
+  margin: 4px 2px;
+  width: 110px;
+  min-height: 44px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Spartan";
+  font-weight: 500;
+  
+  
+  overflow: visible;
+  text-transform: none;
+  /* transition: 220ms all ease-in-out; */
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s, 0s, 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: center;
+
+}
+
+.btn:hover{
+  color: black;
+  background-color: #f1f0ea;
+}
+.btn:focus{
+  outline: 1px solid #f1f0ea;
+  -moz-outline-radius: 4px;
+}
+
+
+@media (max-width: 520px) {
+  .btn{
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+    width: 110px;
+  }
+
+  .btn:hover{
+      color: white;
+      background-color: inherit;
+  }
+}

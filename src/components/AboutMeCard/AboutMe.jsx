@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./AboutMeCard.module.css";
-import Scroll from "../Scroll/Scroll";
+import { Scrollbars } from "react-custom-scrollbars";
 
 const AboutMe = () => {
   return (
-    <Scroll>
-      <div className={styles.container}>
-        <p className={styles.title}>About me</p>
+    <Scrollbars>
+      <div className={styles.wrapper}>
         <p className={styles.story}>
           It must have been about 15 years ago when I built my first website
           with constructor on <a href="https://www.ucoz.com/">ucoz</a>. Back
@@ -30,7 +29,7 @@ const AboutMe = () => {
           continue to grow as a web developer.
         </p>
       </div>
-    </Scroll>
+    </Scrollbars>
   );
 };
 

@@ -3,6 +3,7 @@ import styles from "./AboutMeCard.module.css";
 import AboutMe from "./AboutMe";
 import Education from "./Education";
 import Skills from "./Skills";
+import Button from "../Button/Button";
 
 const AboutMeCard = (props) => {
   const [route, setRoute] = useState("about");
@@ -12,10 +13,14 @@ const AboutMeCard = (props) => {
   if (route === "about") {
     return (
       <div className={styles.AboutMeCard}>
+        <div className={styles.top}>
+          <p className={styles.title}>About me</p>
+        </div>
         <AboutMe />
+
         <div className={styles.btnBlock}>
-          <button onClick={() => setRoute("skills")}>Skills</button>
-          <button onClick={() => setRoute("education")}>Education</button>
+          <Button text="Skills" function={() => setRoute("skills")} />
+          <Button text="Education" function={() => setRoute("education")} />
         </div>
       </div>
     );
@@ -24,8 +29,8 @@ const AboutMeCard = (props) => {
       <div className={styles.AboutMeCard}>
         <Skills />
         <div className={styles.btnBlock}>
-          <button onClick={() => setRoute("about")}>About</button>
-          <button onClick={() => setRoute("education")}>Education</button>
+          <Button text="About" function={() => setRoute("about")} />
+          <Button text="Education" function={() => setRoute("education")} />
         </div>
       </div>
     );
@@ -34,8 +39,8 @@ const AboutMeCard = (props) => {
       <div className={styles.AboutMeCard}>
         <Education />
         <div className={styles.btnBlock}>
-          <button onClick={() => setRoute("skills")}>Skills</button>
-          <button onClick={() => setRoute("about")}>About</button>
+          <Button text="Skills" function={() => setRoute("skills")} />
+          <Button text="About" function={() => setRoute("about")} />
         </div>
       </div>
     );

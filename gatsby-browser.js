@@ -1,2 +1,1 @@
-import "./src/styles/global.css";
-import "./src/styles/scroll.css";
+// import "./src/styles/global.css";

@@ -1,21 +1,20 @@
 import React from "react";
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
-import '../styles/index.css';
+import Layout from "../components/Layout/layout";
+import Head from '../components/Head'
 
-const IndexPage = () => {
+const IndexPage = (props) => {
   return (
-    <main>
-      <title>Dmitrii Frolov</title>
-      <Header />
-      <article>
+    <Layout>
+      <Head title="Dmitrii Frolov"/>
+        <div className="title">
         <h1>Full Stack Web Developer</h1>
-        <div>Hi! I am a self-taught full stack web developer. Take a look at some of my projects!</div>
-        
-      </article>
-      <Footer />
-    </main>
-  )
-}
+        <p>
+          Hi! I am <span className="h2">Dmitrii Frolov</span>, a full stack web developer.
+        </p>
+        <p>Take a look at some of my projects!</p>
+      </div>
+    </Layout>
+  );
+};
 
-export default IndexPage
+export default IndexPage;

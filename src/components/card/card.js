@@ -1,64 +1,39 @@
 import React from "react";
 import styles from "./card.module.css";
-
-
+import Button from "../Button/Button";
+import { Scrollbars } from "react-custom-scrollbars";
 const Card = (props) => {
-    if (props.tool4) {
-        return (
-            <div className={styles.card}>
-                    <p className={styles.title}>{props.title}</p>
-                    <img src={props.pic} className={styles.pic} alt="logo"/>
-                    <div className={styles.tools}>
-                        <div>{props.tool1}</div>
-                        <div>{props.tool2}</div>
-                        <div>{props.tool3}</div>
-                        <div>{props.tool4}</div>
-                    </div>
-                    
-                    <p className={styles.description}>{props.description}</p>
-                <div className={styles.btnBlock}>
-                    <a href={props.live} className={styles.btn}>Live</a>
-                    <a href={props.source} className={styles.btn}>Source</a>
-                </div>
-            </div>
-        )
-    } else if(props.tool3) {
-        return (
-            <div className={styles.card}>
-                    <p className={styles.title}>{props.title}</p>
-                    <img src={props.pic} className={styles.pic} alt="logo"/>
-                    <div className={styles.tools}>
-                        <div>{props.tool1}</div>
-                        <div>{props.tool2}</div>
-                        <div>{props.tool3}</div>
-                    </div>
-                    
-                    <p className={styles.description}>{props.description}</p>
-                <div className={styles.btnBlock}>
-                    <a href={props.live} className={styles.btn}>Live</a>
-                    <a href={props.source} className={styles.btn}>Source</a>
-                </div>
-            </div>
-        )
-    } else {
-        return (
-            <div className={styles.card}>
-                    <p className={styles.title}>{props.title}</p>
-                    <img src={props.pic} className={styles.pic} alt="logo"/>
-                    <div className={styles.tools}>
-                            <div>{props.tool1}</div>
-                        <div>{props.tool2}</div>
-                    </div>
-                            
-                    <p className={styles.description}>{props.description}</p>
-                <div className={styles.btnBlock}>
-                    <a href={props.live} className={styles.btn}>Live</a>
-                    <a href={props.source} className={styles.btn}>Source</a>
-                </div>
-            </div>
-        )
-    }
+  return (
+    <div className={styles.card}>
+      <p className={styles.title}>{props.title}</p>
+      <Scrollbars>
+      <div className={styles.middle}>
+        <div className={styles.ImgContainer}>
+          <a href={props.live}>
+            <img src={props.pic} className={styles.pic} alt="logo" />
+          </a>
+        </div>
+        
+        <div className={styles.textBlock} id="scroll">
     
-}
+          <div className={styles.tools}>
+            {props.tool1}
+            {props.tool2}
+            {props.tool3}
+            {props.tool4}
+            <p className={styles.description}>{props.description}</p>
+          </div>
+          
+        </div>
+        
+      </div>
+      </Scrollbars>
+      <div className={styles.btnBlock}>
+        <Button text="LIVE" href={props.live} />
+        <Button text="SOURCE" href={props.source} />
+      </div>
+    </div>
+  );
+};
 
 export default Card;

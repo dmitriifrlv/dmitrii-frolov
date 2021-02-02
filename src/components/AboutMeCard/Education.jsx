@@ -1,29 +1,21 @@
 import React from "react";
 import styles from "./AboutMeCard.module.css";
-import Scroll from "../Scroll/Scroll";
-import Certificate from "../Certificate/Certificate";
+import { Scrollbars } from "react-custom-scrollbars";
+import Responsive from "../Certificate/Responsive";
+import JsCert from "../Certificate/JS";
 
 const Education = (props) => {
   return (
-    <Scroll>
+    <Scrollbars>
       <p className={styles.title}>Certifications:</p>
-      <Certificate
-        src={"https://i.ibb.co/GF8XLJz/Image-22-01-2021-at-17-53.jpg"}
-        href={
-          "https://www.freecodecamp.org/certification/dmitriifrolov/responsive-web-design"
-        }
-        text={"Responsive Web Design"}
-      />
-      <Certificate
-        src={"https://i.ibb.co/GF8XLJz/Image-22-01-2021-at-17-53.jpg"}
-        href={
-          "https://www.freecodecamp.org/certification/dmitriifrolov/javascript-algorithms-and-data-structures"
-        }
-        text={"JavaScript Algorithms and Data Structures"}
-      />
+      <div className={styles.fluid}>
+        <Responsive loading="eager" />
+        <JsCert loading="eager" />
+      </div>
       <p className={styles.title}>Formal Education:</p>
-      <p className={styles.story}>MSc in Civil Engineering</p>
-    </Scroll>
+
+      <p className={styles.story}>MS in Civil Engineering</p>
+    </Scrollbars>
   );
 };
 

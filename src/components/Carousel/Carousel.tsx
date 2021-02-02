@@ -15,9 +15,9 @@ const NavigationButtons = styled.div`
   display: flex;
   height: 40px;
   margin: 0 auto;
-  width: 20%;
+  width: 40%;
   margin-top: 0.5rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   img {
     height: 100%;
@@ -202,8 +202,8 @@ class Carousel extends Component<IProps, IState> {
     if (showNavigation) {
       navigationButtons = (
         <NavigationButtons>
-          <FontAwesomeIcon style={{ marginRight: "2rem" }} onClick={() => this.moveSlide(-1)} icon={faChevronCircleLeft} size="1x" />
-          <FontAwesomeIcon style={{ marginLeft: "2rem" }} onClick={() => this.moveSlide(1)} icon={faChevronCircleRight} size="1x" />
+          <FontAwesomeIcon className={'icon'} style={{ marginRight: "2rem", cursor: "pointer" }} onClick={() => this.moveSlide(-1)} icon={faChevronCircleLeft} size="2x" />
+          <FontAwesomeIcon style={{ marginLeft: "2rem", cursor: "pointer" }} onClick={() => this.moveSlide(1)} icon={faChevronCircleRight} size="2x" />
         </NavigationButtons>
       );
     }
