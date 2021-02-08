@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: "Dmitrii Frolov",
   },
-  pathPrefix: "/dmitrii-frolov",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
@@ -25,6 +24,8 @@ module.exports = {
   ],
 };
 
+
+// pathPrefix: "/dmitrii-frolov",
 
 // domains: ['https://i.ibb.co/QNK74tj/1.jpg', 'https://i.ibb.co/qxMsjDv/2.jpg', 'https://i.ibb.co/L0SXWMn/3.jpg'],
 

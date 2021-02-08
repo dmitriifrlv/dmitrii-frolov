@@ -20,7 +20,8 @@ footer a{
     border-radius: 50%;
 }
 footer a:hover{
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
     padding: 4px 4px;
     border-radius: 50%;
 }
