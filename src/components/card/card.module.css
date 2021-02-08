@@ -1,17 +1,9 @@
-body::-webkit-scrollbar {
-    width: 3em;
-  }
-  body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  }
-  body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-  }
 .card {
     /* border: 1px solid orange; */
     width: 50vw;
     height: 100%;
+    min-height: 15rem;
+    min-width: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +12,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(-45deg, rgba(34,32,28,1) 45%, rgba(65,77,83,1) 75%);
     border-radius: 1rem;
     box-shadow: 0px 0px 3px white;
+
 }
 .title{
     text-align: center;
@@ -27,38 +20,62 @@ body::-webkit-scrollbar {
     font-size: 20px;
     padding: .4rem 0rem;
     /* border:1px solid pink; */
+    position: absolute;
+    height: 7%;
+    top:0;
+    display: flex;
+    align-items: center;
+    margin-top: .25rem;
 }
 .middle {
     /* border: 3px solid blue; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    /* overflow-y: scroll; */
+    justify-content: space-evenly;
+    position: absolute;
+    height:83%;
+    bottom: 10%;
+    padding: .5rem;
+    max-width: 100%;
+    overflow-y:auto;
+    overflow-x: hidden;
 }
 .middle div {
     margin: 0 auto;
 }
 .ImgContainer {
+    display: flex;
+    justify-content: center;
     width: 95%;
-    height: 55%;
+    /* height: 55%; */
     margin: auto;
     /* border: 3px solid pink; */
+    max-height: 60% !important;
+    padding: .25rem;
 }
 .textBlock {
     /* border: 4px solid green; */
-    height: 45%;
+    /* height: 45%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    overflow-y:scroll;
+    width: 100%;
+    
 }
-.textBlock::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+.middle::-webkit-scrollbar{
+    width: 6px;
+  }
+  
+.middle::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,5);
+    border-radius: 10px;
+  }
+
+.middle::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: none;
   border-radius: 10px;
-  background-color: #F5F5F5;
-}
+  }
 
 .pic {
     flex-direction: row;
@@ -73,7 +90,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* border: 3px solid rgb(190, 42, 235); */
+    /* border: 1px solid rgb(190, 42, 235); */
     width: 100%;
     align-items: center;
     padding: 0rem .5rem;
@@ -83,6 +100,7 @@ body::-webkit-scrollbar {
 .description {
     font-weight: 400;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     text-align: justify;
     font-size: 16px;
@@ -90,7 +108,8 @@ body::-webkit-scrollbar {
     /* height: 50%; */
     margin-top: .25rem;
     line-height: 1.5rem;
-    /* border:1px solid pink; */
+    font-weight: 400;
+    /* border:4px solid pink; */
 }
 
 .btnBlock {
@@ -98,9 +117,13 @@ body::-webkit-scrollbar {
     font-size: 1rem;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
-    margin-bottom: .35rem;
+    margin-bottom: .25rem;
     /* border:1px solid pink; */
+    position: absolute;
+    bottom: 0;
+    height: 10%;
 }
 
 
@@ -109,10 +132,31 @@ body::-webkit-scrollbar {
         width: 80vw;
     }
     .title {
+        padding: 0rem;
+        /* border:1px solid pink; */
+        position: absolute;
+        height: 6%;
         font-size: 1.15rem;
         margin-top: .35rem;
     }
-
+    .middle {
+        /* border: 3px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        height:82%;
+        bottom: 12%;
+        padding: .25rem;
+    }
+   
+    .ImgContainer {
+        width: 95%;
+        /* height: 55%; */
+        margin: auto;
+        max-height: 47%;
+        padding: .25rem;
+    }
     .tools {
         padding: 0rem 0rem;
     }
@@ -123,6 +167,26 @@ body::-webkit-scrollbar {
         color: white;
         background-color: inherit;
     }
+    .description{
+        font-size: 15px;
+    }
+    
+    
+    
   }
 
 
+@media (min-width: 820px) {
+    .ImgContainer {
+        max-height: 67%; 
+        width: 95%;  
+    }
+  }
+
+@media (min-width: 760px) and (min-height: 850px) {
+    .middle {
+
+        height:95%;
+        bottom: 5%;  
+    }
+}

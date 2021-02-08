@@ -1,85 +1,56 @@
 import React from "react";
 import styles from "./AboutMeCard.module.css";
 import Logo from "../logos/Logo";
-import { Scrollbars } from "react-custom-scrollbars";
+import JSlogo from "../../images/icons/javascript.svg";
+import Bootstrap from "../../images/icons/bootstrap.svg";
+import ReactLogo from "../../images/icons/react.svg";
+import GatsbyLogo from "../../images/icons/gatsby.svg";
+import html from "../../images/icons/html.svg";
+import css from "../../images/icons/css.svg";
+import psqlLogo from "../../images/icons/psql.svg";
+import node from "../../images/icons/nodejs.svg";
+import VSC from "../../images/icons/vsc.svg";
+import Git from "../../images/icons/git.svg";
+import GitHub from "../../images/icons/github.svg";
+import Redux from "../../images/icons/redux.svg";
+import figma from "../../images/icons/figma.png";
+import npm from "../../images/icons/npm.svg";
+import chrome from "../../images/icons/chrome.svg";
 
 const Skills = (props) => {
   return (
-    <Scrollbars>
+    <div className={styles.wrapper} id="skills">
       <div className={styles.block}>
         <p className={styles.title}>Front End Skills:</p>
         <div className={styles.skills}>
-          <Logo
-            src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-            text="ReactJS"
-          />
-          <Logo
-            src="https://www.gatsbyjs.com/Gatsby-Monogram.svg"
-            text="GatsbyJS"
-          />
-          <Logo
-            src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
-            text="HTML"
-          />
-          <Logo src="https://svgur.com/i/TJB.svg" text="CSS" />
-          <Logo
-            src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg"
-            text="Bootstrap"
-          />
-          <Logo
-            src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
-            text="JavaScript"
-          />
+          <Logo src={ReactLogo} text="ReactJS" />
+          <Logo src={GatsbyLogo} text="GatsbyJS" />
+          <Logo src={html} text="HTML" />
+          <Logo src={css} text="CSS" />
+          <Logo src={Bootstrap} text="Bootstrap" />
+          <Logo src={JSlogo} text="Javascript" />
         </div>
       </div>
       <div className={styles.block}>
         <p className={styles.title}>Back End Skills:</p>
         <div className={styles.skills}>
-          <Logo
-            src="https://nodejs.org/static/images/logos/nodejs-new-pantone-white.svg"
-            text="Node.js + Express.js"
-          />
-          <Logo
-            src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg"
-            text="PostgreSQL"
-          />
+          <Logo src={node} text="Node.js + Express.js" />
+          <Logo src={psqlLogo} text="PostgreSQL" />
         </div>
       </div>
       <div className={styles.block}>
         <p className={styles.title}>Tools I Use:</p>
         <div className={styles.skills}>
-          <Logo
-            src="https://cdn.worldvectorlogo.com/logos/visual-studio-code.svg"
-            text="Visual Studio Code"
-            className="text"
-          />
-          <Logo
-            src="https://cdn.worldvectorlogo.com/logos/git-icon.svg"
-            text="Git"
-          />
-          <Logo
-            src="https://cdn.worldvectorlogo.com/logos/github-icon.svg"
-            text="Github"
-          />
-          <Logo
-            src="https://cdn.worldvectorlogo.com/logos/redux.svg"
-            text="Redux"
-          />
-          <Logo
-            src="https://seeklogo.com/images/F/figma-logo-E4E21D3AEA-seeklogo.com.png"
-            text="Figma"
-          />
-          <Logo
-            src="https://cdn.worldvectorlogo.com/logos/npm.svg"
-            text="npm"
-          />
-          <Logo
-            src="https://cdn.worldvectorlogo.com/logos/chrome-7.svg"
-            text="Chrome Developer Tools"
-          />
+          <Logo src={VSC} text="Visual Studio Code" className="text" />
+          <Logo src={Git} text="Git" />
+          <Logo src={GitHub} text="Github" />
+          <Logo src={Redux} text="Redux" />
+          <Logo src={figma} text="Figma" />
+          <Logo src={npm} text="npm" />
+          <Logo src={chrome} text="Chrome Developer Tools" />
         </div>
       </div>
-    </Scrollbars>
+    </div>
   );
 };
 

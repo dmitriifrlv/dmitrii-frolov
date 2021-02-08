@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./AboutMeCard.module.css";
-import { Scrollbars } from "react-custom-scrollbars";
 import Responsive from "../Certificate/Responsive";
 import JsCert from "../Certificate/JS";
 
 const Education = (props) => {
   return (
-    <Scrollbars>
+    <div className={styles.wrapper}>
       <p className={styles.title}>Certifications:</p>
       <div className={styles.fluid}>
         <Responsive loading="eager" />
@@ -14,8 +13,8 @@ const Education = (props) => {
       </div>
       <p className={styles.title}>Formal Education:</p>
 
-      <p className={styles.story}>MS in Civil Engineering</p>
-    </Scrollbars>
+      <p className={styles.story}>MSc in Civil Engineering</p>
+    </div>
   );
 };
 

@@ -1,0 +1,74 @@
+.AboutMeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: .25rem;
+  background: linear-gradient(-45deg, rgba(34,32,28,1) 45%, rgba(65,77,83,1) 75%);
+  width: 60%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 3px white;
+  /* border: 5px solid red; */
+}
+
+.AboutMeCard .top{
+  /* border: 3px solid yellow; */
+  width: 60%;
+  position: absolute;
+  top:0;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.title{
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.btnBlock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin-top: .6rem;
+  margin-bottom: .35rem;
+  /* border: 3px solid white; */
+  position: absolute;
+  bottom: 0;
+  height: 9%;
+}
+.main{
+  position: absolute;
+  height: 84%;
+  bottom: 9%;
+  width: 60%;
+  /* border: 3px solid white; */
+  border-radius: .25rem;
+  padding-bottom: .75rem;
+}
+
+@media (max-width: 520px) {
+  .AboutMeCard {
+    width: 80%;
+  }
+  .AboutMeCard .top{
+    width: 80%;
+  }
+  .title{
+    font-size: 21px;
+    font-weight: 500;
+  }
+  
+  .btnBlock{
+    width: 80%;
+  }
+  
+  .main{
+    width: 80%;
+  }
+  
+}

@@ -16,7 +16,7 @@ footer a{
     color: white;
     transform: scale(1.35);
     background-color: transparent;
-    padding: 5px 5px;
+    padding: 4px 4px;
     border-radius: 50%;
 }
 footer a:hover{
