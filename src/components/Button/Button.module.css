@@ -7,20 +7,14 @@
   background-color: inherit;
   border-radius: 1rem;
   border: 1px solid #f1f0ea;
-  /* padding: 0.25em 0.5em; */
   padding: 5px 10px;
   margin: 4px 2px;
   width: 110px;
   height: 44px;
   border-radius: 4px;
   cursor: pointer;
-  font-family: "Spartan";
-  font-weight: 500;
-  
-  
   overflow: visible;
   text-transform: none;
-  /* transition: 220ms all ease-in-out; */
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   transition-property: color, background-color, border-color, box-shadow;
   transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
@@ -30,11 +24,10 @@
   align-items: center;
   justify-content: center;
   user-select: none;
-  vertical-align: middle;
-  text-transform: uppercase;
-  line-height: 2;
+  vertical-align: middle; 
+  line-height: 1rem;
   text-align: center;
-
+  text-transform: uppercase;
 }
 
 .btn:hover{

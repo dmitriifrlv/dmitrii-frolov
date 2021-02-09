@@ -20,6 +20,18 @@ module.exports = {
         name: "images",
         path: `${__dirname}/src/images/`,
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Dmitrii Frolov`,
+        short_name: `Dmitrii Frolov`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
+        display: `minimal-ui`,
+        icon: `${__dirname}/src/images/favicon.svg`, // This path is relative to the root of the site.
+      }
     }
   ],
 };

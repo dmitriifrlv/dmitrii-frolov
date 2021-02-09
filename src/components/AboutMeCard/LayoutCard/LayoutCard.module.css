@@ -34,7 +34,7 @@
   cursor:pointer;
 }
 .top .toHome:hover {
-  background-color: rgba(214, 196, 196, 1);
+  background-color: #f1f0ea;
   color: black;
   padding: 4px 4px;
   border-radius: 50%;
