@@ -28,6 +28,7 @@ header p{
     background-color: transparent;
     padding: 6px 8px;
     border-radius: 4px;
+    width: fit-content;
     /* border: 3px solid pink; */
 }
 
@@ -49,11 +50,13 @@ header p:hover{
         transition:none;
         background-color: transparent;
         padding: 0 5px;
+       
     }
     
     header p:hover,
     header p:active{
         background-color: transparent;
         padding: 0 5px;
+        color: white;
     }
   }

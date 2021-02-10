@@ -8,12 +8,18 @@ export default function Header(props) {
       <Link className="link" to="/">
         <p>HOME</p>
       </Link>
-      <Link className="link" to="/about/">
+      
+      <div>
+      <Link className="link middle" to="/about/">
         <p>ABOUT</p>
       </Link>
+      </div>
+    
       <Link className="link" to="/projects/">
         <p>PROJECTS</p>
       </Link>
+      
+      
     </header>
   );
 }

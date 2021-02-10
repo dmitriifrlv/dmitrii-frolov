@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <div className={styles.top}>
       <p className={styles.title}>{props.title}</p>
-      <a>
+      <a href="/#">
         <Link className={styles.toHome} to="/">
           <FontAwesomeIcon icon={faTimesCircle} size="1x" />
         </Link>

@@ -99,12 +99,13 @@ class Slides extends Component {
         <Card
           title="Monsters-rolodex"
           pic={Monsters}
-          description="My first application in React.js. Generates a list of monsters with a search function."
+          description="My first application in React.js where I also learnt and applied React-Redux. Generates a list of monsters with a search function."
           live="https://dmitriifrlv.github.io/monsters-rolodex/"
           source="https://github.com/dmitriifrlv/monsters-rolodex"
           tool1={<Logo src={ReactLogo} text="ReactJS" />}
-          tool2={<Logo src={Html} text="HTML" />}
-          tool3={<Logo src={Css} text="CSS" />}
+          tool2={<Logo src={Redux} text="React-Redux" />}
+          tool3={<Logo src={Html} text="HTML" />}
+          tool4={<Logo src={Css} text="CSS" />}
         />
       ),
     },
